@@ -1,0 +1,12 @@
+[user]
+	name = Vlad Pirlog
+	email = avi.pirlog@gmail.com
+	signingkey = 3BC079E13034C758
+[gpg]
+	program = gpg
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[tag]
+	gpgSign = true
