@@ -117,9 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 # add bash completions from the .bash_completions directory
-for f in ~/.bash_completions/*; do
-    . $f
-done
+if [ -d ~/.bash_completions ] && [ "$(ls -A ~/.bash_completions)" ]; then
+    for f in ~/.bash_completions/*; do
+        . $f
+    done
+fi
 
 # start ssh-agent and add keys
 if ! pgrep ssh-agent &>/dev/null; then
