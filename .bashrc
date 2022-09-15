@@ -131,7 +131,8 @@ fi
 ssh-add -q ~/.ssh/id_ed25519_github \
            ~/.ssh/id_ed25519_rpi4 \
            ~/.ssh/id_rsa_router_openwrt \
-           ~/.ssh/id_ed25519_gitlab_rpi4
+           ~/.ssh/id_ed25519_gitlab_rpi4 \
+           ~/.ssh/id_ed25519_do-first-instance
 
 # custom util functions
 base64url() {
