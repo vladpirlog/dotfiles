@@ -1,6 +1,6 @@
 [user]
 	name = Vlad Pirlog
-	email = avi.pirlog@gmail.com
+	email = vlad@pirlog.net
 	signingkey = 3BC079E13034C758
 [gpg]
 	program = gpg
