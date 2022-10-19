@@ -10,3 +10,10 @@
 	defaultBranch = main
 [tag]
 	gpgSign = true
+[sendemail]
+	smtpUser = vlad@pirlog.net
+	from = Vlad Pirlog <vlad@pirlog.net>
+	smtpEncryption = ssl
+	smtpServer = smtp.pirlog.net
+	smtpServerPort = 465
+	suppresscc = self
