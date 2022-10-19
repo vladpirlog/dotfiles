@@ -29,7 +29,3 @@ fi
 export GPG_TTY=$(tty)
 export JAVA_HOME=/usr/lib/jvm/default-java
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
-
-
-# Added by Toolbox App
-export PATH="$PATH:/home/vladpirlog/.local/share/JetBrains/Toolbox/scripts"
