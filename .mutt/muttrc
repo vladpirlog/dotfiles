@@ -1,0 +1,25 @@
+set from = vlad@pirlog.net
+set realname = "Vlad Pirlog"
+set use_from = yes
+
+set imap_user = vlad@pirlog.net
+set folder = "imaps://$imap_user@imap.pirlog.net"
+set copy = yes
+set record = +Sent
+
+set header_cache = ~/.cache/mutt
+set message_cachedir = ~/.cache/mutt
+
+unset imap_passive
+
+set mail_check = 300
+
+mailboxes = +INBOX
+set spoolfile = +INBOX
+set imap_check_subscribed
+
+set smtp_url = "smtps://$imap_user@smtp.pirlog.net"
+set ssl_force_tls = yes
+unset ssl_starttls
+
+bind index G imap-fetch-mail
