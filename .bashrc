@@ -118,17 +118,6 @@ if [ -d ~/.bash_completions ] && [ "$(ls -A ~/.bash_completions)" ]; then
     done
 fi
 
-# start ssh-agent and add keys
-if ! pgrep ssh-agent &>/dev/null; then
-    eval `ssh-agent -s` >/dev/null
-fi
-
-ssh-add -q ~/.ssh/id_ed25519_github \
-           ~/.ssh/id_ed25519_rpi4 \
-           ~/.ssh/id_rsa_router_openwrt \
-           ~/.ssh/id_ed25519_gitlab_rpi4 \
-           ~/.ssh/id_ed25519_do-first-instance
-
 # custom util functions
 base64url() {
     base64 "$@" | sed 's/=*$//g; s/\//_/g; s/+/-/g'
