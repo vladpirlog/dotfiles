@@ -133,3 +133,10 @@ ssh-add -q ~/.ssh/id_ed25519_github \
 base64url() {
     base64 "$@" | sed 's/=*$//g; s/\//_/g; s/+/-/g'
 }
+
+# custom env vars
+export GPG_TTY=$(tty)
+export JAVA_HOME=/usr/lib/jvm/default-java
+export DOTNET_CLI_TELEMETRY_OPTOUT=true
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+export EDITOR=nano
