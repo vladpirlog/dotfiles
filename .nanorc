@@ -3,3 +3,7 @@ set tabsize 4
 
 ## Convert typed tabs to spaces.
 set tabstospaces
+
+## Add syntax highlighting
+include "/usr/share/nano/*.nanorc"
+include "/usr/share/nano-syntax-highlighting/*.nanorc"
