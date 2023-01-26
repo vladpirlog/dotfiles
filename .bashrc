@@ -124,6 +124,7 @@ base64url() {
 }
 
 # custom env vars
+export PATH="$PATH:$HOME/.local/bin"
 export GPG_TTY=$(tty)
 export JAVA_HOME=/usr/lib/jvm/default-java
 export DOTNET_CLI_TELEMETRY_OPTOUT=true
