@@ -6,6 +6,7 @@ prompt_detached="\uf417"
 prompt_github="\uf09b"
 prompt_gitlab="\uf296"
 prompt_bitbucket="\uf5a7"
+prompt_linux="\uf17c"
 prompt_gear="\uf013"
 prompt_clock_01="\ue382"
 prompt_clock_02="\ue383"
@@ -92,6 +93,7 @@ prompt_git() {
         [[ -n "$(echo $urls | grep bitbucket)" ]] && text="$prompt_bitbucket $text"
         [[ -n "$(echo $urls | grep gitlab)" ]] && text="$prompt_gitlab $text"
         [[ -n "$(echo $urls | grep github)" ]] && text="$prompt_github $text"
+        [[ -n "$(echo $urls | grep linux)" ]] && text="$prompt_linux $text"
 
         prompt_segment $prompt_git_bg $prompt_git_fg "$text"
     fi

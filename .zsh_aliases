@@ -1,0 +1,18 @@
+alias zrc="$EDITOR ~/.zshrc"
+alias zenv="$EDITOR ~/.zshenv"
+alias zreload="source ~/.zshrc"
+
+alias py=python3
+command -v codium >/dev/null && alias code=codium
+alias leetcode='cd ~/algo/leetcode && code .'
+alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+command -v pacman >/dev/null && alias pacman='pacman --color auto'
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
