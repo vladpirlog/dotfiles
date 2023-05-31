@@ -6,6 +6,7 @@ set imap_user = vlad@pirlog.net
 set folder = "imaps://$imap_user@imap.pirlog.net"
 set copy = yes
 set record = +Sent
+set postponed = +Drafts
 
 set header_cache = ~/.cache/mutt
 set message_cachedir = ~/.cache/mutt
@@ -18,7 +19,7 @@ set trash = +Trash
 
 mailboxes = +INBOX
 set spoolfile = +INBOX
-set imap_check_subscribed
+set imap_check_subscribed = yes
 
 set smtp_url = "smtps://$imap_user@smtp.pirlog.net"
 set ssl_force_tls = yes
