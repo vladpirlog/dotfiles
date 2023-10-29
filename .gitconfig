@@ -1,6 +1,6 @@
 [user]
 	name = Vlad Pirlog
-	email = vlad@pirlog.net
+	email = vlad@pirlog.com
 	signingkey = 3BC079E13034C758
 [gpg]
 	program = gpg
@@ -11,9 +11,9 @@
 [tag]
 	gpgSign = true
 [sendemail]
-	smtpUser = vlad@pirlog.net
-	from = Vlad Pirlog <vlad@pirlog.net>
+	smtpUser = vlad@pirlog.com
+	from = Vlad Pirlog <vlad@pirlog.com>
 	smtpEncryption = ssl
-	smtpServer = smtp.pirlog.net
+	smtpServer = smtp.pirlog.com
 	smtpServerPort = 465
 	suppresscc = self
